@@ -1,12 +1,11 @@
-const data = require("../data/zoo_data");
+const data = require('../data/zoo_data');
 
 const employees = [...data.employees];
 
 function isManager(id) {
   // seu código aqui
   const managerOrNot = employees.some((employee) =>
-    employee.managers.includes(id)
-  );
+    employee.managers.includes(id));
   return managerOrNot;
 }
 
