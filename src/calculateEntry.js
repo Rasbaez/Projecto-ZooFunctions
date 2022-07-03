@@ -21,7 +21,7 @@ function countEntrants(entrants) {
   return Object.entries(entrants).length === 0 ? 0 : persons;
 }
 
-function calculateEntry(entrants = 0) {
+function calculateEntry(entrants = 0) { // default parameter para definir como 0 ainda não entendi bem esse ponto mas vi no mdn (Functions/Default_parameters)
   if (Object.entries(entrants).length === 0) return 0;
   const visitantsCounter = countEntrants(entrants);
   const { adult, senior, child } = visitantsCounter;

@@ -761,7 +761,8 @@ calculateEntry(entrants);
 
 Na função `countEntrants`:
 
-  - Ao receber um array de visitantes, retorna um objeto com a contagem.
+  
+  
 
 Na função `calculateEntry`:
 

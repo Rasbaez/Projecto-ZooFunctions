@@ -7,22 +7,19 @@ function countAnimals(animal) {
   species.forEach((elem) => {
     list[elem.name] = elem.residents.length;
   });
-
-  if (animal === undefined) {
-    return list;
-  }
-
+  if (animal === undefined) return list;
   const { specie, sex } = animal;
-
   const result = species.find((elem) => elem.name === specie);
-
   if (sex !== undefined) {
-    return result.residents.filter((elem) => elem.sex === sex);
+    return result.residents.filter((elem) => elem.sex === sex).length;
+  }
+  if (result === []) {
+    return 0;
   }
   return result.residents.length;
 }
 
-// console.log(countAnimals({ specie: 'penguins' }));
-console.log(species);
+// console.log(countAnimals({ specie: "bears", sex: "female" }));
+// console.log(countAnimals({ specie: 'elephants', sex: 'male' }));
 
 module.exports = countAnimals;
