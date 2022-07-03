@@ -7,7 +7,7 @@ const { hours } = data;
 
 const getOfficeHours = (day) => {
   if (hours[day].open === 0) {
-    return 'LOSED';
+    return 'CLOSED';
   }
   return `Open from ${hours[day].open}am until ${hours[day].close}pm`;
 };
@@ -63,6 +63,7 @@ function getSchedule(scheduleTarget) {
   if (!daysOWeek.includes(scheduleTarget)) return zooSchedule();
   if (daysOWeek.includes(scheduleTarget)) return zooSchedule(scheduleTarget);
 }
+
 // console.log(getSchedule("lions"));
 // console.log(getSchedule("penguins"));
 // console.log(getSchedule());
