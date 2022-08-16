@@ -1,4 +1,4 @@
-Neste Projeto Zoo Functions, foi simulado um sistema de Zoológico, com funcionários, animais, horário de funcionamento!!
+Neste Projeto Zoo Functions, foi simulado um sistema de Zoológico, com funcionários, animais, horário de funcionamento.
 
 Aqui ultilizamos as HOFS e JavaScript moderno ES6 para resolver os requisitos, junto com a obrigatoriedade do ESLINT, seguindo um padrão (cleanCode).
 
