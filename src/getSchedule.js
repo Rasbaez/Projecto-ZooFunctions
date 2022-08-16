@@ -21,6 +21,7 @@ function searchAnimalPerDay(day) {
     }
     return acc;
   }, []);
+
   if (findAnimal.length === 0) {
     return 'The zoo will be closed!';
   }
